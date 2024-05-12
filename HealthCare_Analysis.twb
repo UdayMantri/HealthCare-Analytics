@@ -1,0 +1,2902 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Dialysis_1+' inline='true' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dialysis_1' name='textscan.1muvavi0hmamrg1h61q881l9p821'>
+            <connection class='textscan' directory='C:/Users/Uday/OneDrive/Desktop/SQL/SQL files/HEALTHCARE' filename='Dialysis_1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1muvavi0hmamrg1h61q881l9p821' name='Dialysis_1.csv' table='[Dialysis_1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Provider_Number' ordinal='0' />
+            <column datatype='string' name='Facility_Name' ordinal='1' />
+            <column datatype='integer' name='Five Star' ordinal='2' />
+            <column datatype='string' name='City' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='string' name='County' ordinal='5' />
+            <column datatype='string' name='Profit_Non-Profit' ordinal='6' />
+            <column datatype='string' name='Chain Owned' ordinal='7' />
+            <column datatype='string' name='Chain_Organization' ordinal='8' />
+            <column datatype='integer' name='# of Dialysis Stations' ordinal='9' />
+            <column datatype='string' name='Patient_Transfusion category text' ordinal='10' />
+            <column datatype='integer' name='Num_Patients_Transfusion_Summary' ordinal='11' />
+            <column datatype='integer' name='Num_Patients_Hypercalcemia_Summary' ordinal='12' />
+            <column datatype='integer' name='Num_Patients_SerumPhosphorus_Summary' ordinal='13' />
+            <column datatype='string' name='Patient_hospitalization_category_text' ordinal='14' />
+            <column datatype='string' name='Patient_Hospital_Readmission_Category' ordinal='15' />
+            <column datatype='string' name='Patient_Survival_Category_Text' ordinal='16' />
+            <column datatype='integer' name='Num_Patient_Hospitalizations_Summary' ordinal='17' />
+            <column datatype='integer' name='Num_Patients_Hospitalizations_Readmit_Summary' ordinal='18' />
+            <column datatype='integer' name='Num_Patients_Survival_Summary' ordinal='19' />
+            <column datatype='real' name='Mortality_Rate (Facility)' ordinal='20' />
+            <column datatype='real' name='Readmission_Rate (Facility)' ordinal='21' />
+            <column datatype='real' name='Hospitalization_Rate (Facility)' ordinal='22' />
+            <column datatype='string' name='Patient_Infection_category_text' ordinal='23' />
+            <column datatype='real' name='Standard_Infection_Ratio' ordinal='24' />
+            <column datatype='real' name='Transfusion_Rate (Facility)' ordinal='25' />
+            <column datatype='string' name='Fistula_Category_Text' ordinal='26' />
+            <column datatype='integer' name='Num_Patients_Fistula_Summary' ordinal='27' />
+            <column datatype='integer' name='Num_Patients_Catheter_Summary' ordinal='28' />
+            <column datatype='integer' name='Num_Patients_nPCR_Summary' ordinal='29' />
+            <column datatype='string' name='SWR_category_text' ordinal='30' />
+            <column datatype='integer' name='Num_Patients_SWR' ordinal='31' />
+            <column datatype='string' name='PPPW_category_text' ordinal='32' />
+            <column datatype='integer' name='Num_Patients_PPPW' ordinal='33' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1muvavi0hmamrg1h61q881l9p821' name='Dialysis_1.csv' table='[Dialysis_1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Provider_Number' ordinal='0' />
+              <column datatype='string' name='Facility_Name' ordinal='1' />
+              <column datatype='integer' name='Five Star' ordinal='2' />
+              <column datatype='string' name='City' ordinal='3' />
+              <column datatype='string' name='State' ordinal='4' />
+              <column datatype='string' name='County' ordinal='5' />
+              <column datatype='string' name='Profit_Non-Profit' ordinal='6' />
+              <column datatype='string' name='Chain Owned' ordinal='7' />
+              <column datatype='string' name='Chain_Organization' ordinal='8' />
+              <column datatype='integer' name='# of Dialysis Stations' ordinal='9' />
+              <column datatype='string' name='Patient_Transfusion category text' ordinal='10' />
+              <column datatype='integer' name='Num_Patients_Transfusion_Summary' ordinal='11' />
+              <column datatype='integer' name='Num_Patients_Hypercalcemia_Summary' ordinal='12' />
+              <column datatype='integer' name='Num_Patients_SerumPhosphorus_Summary' ordinal='13' />
+              <column datatype='string' name='Patient_hospitalization_category_text' ordinal='14' />
+              <column datatype='string' name='Patient_Hospital_Readmission_Category' ordinal='15' />
+              <column datatype='string' name='Patient_Survival_Category_Text' ordinal='16' />
+              <column datatype='integer' name='Num_Patient_Hospitalizations_Summary' ordinal='17' />
+              <column datatype='integer' name='Num_Patients_Hospitalizations_Readmit_Summary' ordinal='18' />
+              <column datatype='integer' name='Num_Patients_Survival_Summary' ordinal='19' />
+              <column datatype='real' name='Mortality_Rate (Facility)' ordinal='20' />
+              <column datatype='real' name='Readmission_Rate (Facility)' ordinal='21' />
+              <column datatype='real' name='Hospitalization_Rate (Facility)' ordinal='22' />
+              <column datatype='string' name='Patient_Infection_category_text' ordinal='23' />
+              <column datatype='real' name='Standard_Infection_Ratio' ordinal='24' />
+              <column datatype='real' name='Transfusion_Rate (Facility)' ordinal='25' />
+              <column datatype='string' name='Fistula_Category_Text' ordinal='26' />
+              <column datatype='integer' name='Num_Patients_Fistula_Summary' ordinal='27' />
+              <column datatype='integer' name='Num_Patients_Catheter_Summary' ordinal='28' />
+              <column datatype='integer' name='Num_Patients_nPCR_Summary' ordinal='29' />
+              <column datatype='string' name='SWR_category_text' ordinal='30' />
+              <column datatype='integer' name='Num_Patients_SWR' ordinal='31' />
+              <column datatype='string' name='PPPW_category_text' ordinal='32' />
+              <column datatype='integer' name='Num_Patients_PPPW' ordinal='33' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1muvavi0hmamrg1h61q881l9p821' name='Dialysis_2.csv' table='[Dialysis_2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='CCN_Number' ordinal='0' />
+              <column datatype='string' name='Total_ Performance _Score' ordinal='1' />
+              <column datatype='real' name='Payment_Reduction_Percentage' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Dialysis_2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Provider_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Provider_Number]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Provider_Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Facility_Name]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Facility_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Five Star</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Five Star]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Five Star</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit_Non-Profit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Profit_Non-Profit]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Profit_Non-Profit</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chain Owned</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Chain Owned]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Chain Owned</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chain_Organization</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Chain_Organization]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Chain_Organization</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name># of Dialysis Stations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[# of Dialysis Stations]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias># of Dialysis Stations</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Transfusion category text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Transfusion category text]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Patient_Transfusion category text</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_Transfusion_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_Transfusion_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_Transfusion_Summary</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_Hypercalcemia_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_Hypercalcemia_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_Hypercalcemia_Summary</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_SerumPhosphorus_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_SerumPhosphorus_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_SerumPhosphorus_Summary</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_hospitalization_category_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_hospitalization_category_text]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Patient_hospitalization_category_text</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Hospital_Readmission_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Hospital_Readmission_Category]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Patient_Hospital_Readmission_Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Survival_Category_Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Survival_Category_Text]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Patient_Survival_Category_Text</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patient_Hospitalizations_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patient_Hospitalizations_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patient_Hospitalizations_Summary</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_Hospitalizations_Readmit_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_Hospitalizations_Readmit_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_Hospitalizations_Readmit_Summary</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_Survival_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_Survival_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_Survival_Summary</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortality_Rate (Facility)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortality_Rate (Facility)]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Mortality_Rate (Facility)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Readmission_Rate (Facility)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Readmission_Rate (Facility)]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Readmission_Rate (Facility)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospitalization_Rate (Facility)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hospitalization_Rate (Facility)]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Hospitalization_Rate (Facility)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Infection_category_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Infection_category_text]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Patient_Infection_category_text</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Standard_Infection_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Standard_Infection_Ratio]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Standard_Infection_Ratio</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transfusion_Rate (Facility)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Transfusion_Rate (Facility)]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Transfusion_Rate (Facility)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fistula_Category_Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fistula_Category_Text]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Fistula_Category_Text</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_Fistula_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_Fistula_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_Fistula_Summary</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_Catheter_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_Catheter_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_Catheter_Summary</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_nPCR_Summary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_nPCR_Summary]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_nPCR_Summary</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SWR_category_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SWR_category_text]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>SWR_category_text</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_SWR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_SWR]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_SWR</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PPPW_category_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PPPW_category_text]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>PPPW_category_text</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num_Patients_PPPW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num_Patients_PPPW]</local-name>
+            <parent-name>[Dialysis_1.csv]</parent-name>
+            <remote-alias>Num_Patients_PPPW</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CCN_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CCN_Number]</local-name>
+            <parent-name>[Dialysis_2.csv]</parent-name>
+            <remote-alias>CCN_Number</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_2.csv_951C4D8DFF4F4B19938F8BC7A5F48BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_ Performance _Score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total_ Performance _Score]</local-name>
+            <parent-name>[Dialysis_2.csv]</parent-name>
+            <remote-alias>Total_ Performance _Score</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_2.csv_951C4D8DFF4F4B19938F8BC7A5F48BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment_Reduction_Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Payment_Reduction_Percentage]</local-name>
+            <parent-name>[Dialysis_2.csv]</parent-name>
+            <remote-alias>Payment_Reduction_Percentage</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Dialysis_2.csv_951C4D8DFF4F4B19938F8BC7A5F48BD1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[# of Dialysis Stations]' role='measure' type='quantitative' />
+      <column caption='CCN Number' datatype='integer' name='[CCN_Number]' role='dimension' type='ordinal' />
+      <column caption='sum(0) (1)' datatype='integer' name='[Calculation_1627769803728773121]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(0)' />
+      </column>
+      <column caption='sum(0)' datatype='integer' name='[Calculation_1627769803728805891]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum(0)' />
+      </column>
+      <column caption='0' datatype='integer' name='[Calculation_1627769803734802444]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='0 (1)' datatype='integer' name='[Calculation_1627769803734810638]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='Category Text As Expected' datatype='integer' datatype-customized='true' name='[Calculation_1627769803737321487]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [Fistula_Category_Text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_hospitalization_category_text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_Infection_category_text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_Survival_Category_Text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_Transfusion category text] = &quot;As Expected&quot; AND&#13;&#10;    [PPPW_category_text] = &quot;As Expected&quot;&#13;&#10;     &#13;&#10;THEN&#13;&#10;    1&#13;&#10;ELSE&#13;&#10;    0&#13;&#10;END' />
+      </column>
+      <column caption='Summary calculation vs category text as expected' datatype='real' name='[Calculation_1627769803738546192]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Fistula_Category_Text] = &quot;As Expected&quot; THEN [Num_Patients_Fistula_Summary]&#13;&#10;ELSEIF [Patient_hospitalization_category_text] = &quot;As Expected&quot; THEN [Num_Patient_Hospitalizations_Summary]&#13;&#10;ELSEIF [Patient_Infection_category_text] = &quot;As Expected&quot; THEN [Standard_Infection_Ratio]&#13;&#10;ELSEIF [Patient_Survival_Category_Text] = &quot;As Expected&quot; THEN [Num_Patients_Survival_Summary]&#13;&#10;ELSEIF [Patient_Transfusion category text] = &quot;As Expected&quot; THEN [Num_Patients_Transfusion_Summary]&#13;&#10;ELSEIF [PPPW_category_text] = &quot;As Expected&quot; THEN [Num_Patients_PPPW]&#13;&#10;ELSEIF [SWR_category_text] = &quot;As Expected&quot; THEN [Num_Patients_SWR]&#13;&#10;ELSE NULL&#13;&#10;END' />
+      </column>
+      <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Facility Name' datatype='string' name='[Facility_Name]' role='dimension' type='nominal' />
+      <column caption='Fistula Category Text' datatype='string' name='[Fistula_Category_Text]' role='dimension' type='nominal' />
+      <column caption='Hospitalization Rate (Facility)' datatype='real' name='[Hospitalization_Rate (Facility)]' role='measure' type='quantitative' />
+      <column caption='Mortality Rate (Facility)' datatype='real' name='[Mortality_Rate (Facility)]' role='measure' type='quantitative' />
+      <column caption='Num Patient Hospitalizations Summary' datatype='integer' name='[Num_Patient_Hospitalizations_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients Catheter Summary' datatype='integer' name='[Num_Patients_Catheter_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients Fistula Summary' datatype='integer' name='[Num_Patients_Fistula_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients Hospitalizations Readmit Summary' datatype='integer' name='[Num_Patients_Hospitalizations_Readmit_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients Hypercalcemia Summary' datatype='integer' name='[Num_Patients_Hypercalcemia_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients PPPW' datatype='integer' name='[Num_Patients_PPPW]' role='measure' type='quantitative' />
+      <column caption='Num Patients SWR' datatype='integer' name='[Num_Patients_SWR]' role='measure' type='quantitative' />
+      <column caption='Num Patients SerumPhosphorus Summary' datatype='integer' name='[Num_Patients_SerumPhosphorus_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients Survival Summary' datatype='integer' name='[Num_Patients_Survival_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients Transfusion Summary' datatype='integer' name='[Num_Patients_Transfusion_Summary]' role='measure' type='quantitative' />
+      <column caption='Num Patients nPCR Summary' datatype='integer' name='[Num_Patients_nPCR_Summary]' role='measure' type='quantitative' />
+      <column caption='PPPW category text' datatype='string' name='[PPPW_category_text]' role='dimension' type='nominal' />
+      <column caption='Patient Hospital Readmission Category' datatype='string' name='[Patient_Hospital_Readmission_Category]' role='dimension' type='nominal' />
+      <column caption='Patient Infection category text' datatype='string' name='[Patient_Infection_category_text]' role='dimension' type='nominal' />
+      <column caption='Patient Survival Category Text' datatype='string' name='[Patient_Survival_Category_Text]' role='dimension' type='nominal' />
+      <column caption='Patient Transfusion category text' datatype='string' name='[Patient_Transfusion category text]' role='dimension' type='nominal' />
+      <column caption='Patient hospitalization category text' datatype='string' name='[Patient_hospitalization_category_text]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Payment Reduction Percentage' datatype='real' name='[Payment_Reduction_Percentage]' role='dimension' type='ordinal' />
+      <column caption='Profit Non-Profit' datatype='string' name='[Profit_Non-Profit]' role='dimension' type='nominal' />
+      <column caption='Provider Number' datatype='integer' name='[Provider_Number]' role='dimension' type='ordinal' />
+      <column caption='Readmission Rate (Facility)' datatype='real' name='[Readmission_Rate (Facility)]' role='measure' type='quantitative' />
+      <column caption='SWR category text' datatype='string' name='[SWR_category_text]' role='dimension' type='nominal' />
+      <column caption='Standard Infection Ratio' datatype='real' name='[Standard_Infection_Ratio]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+      <column caption='Transfusion Rate (Facility)' datatype='real' name='[Transfusion_Rate (Facility)]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Dialysis_1.csv' datatype='table' name='[__tableau_internal_object_id__].[Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Dialysis_2.csv' datatype='table' name='[__tableau_internal_object_id__].[Dialysis_2.csv_951C4D8DFF4F4B19938F8BC7A5F48BD1]' role='measure' type='quantitative' />
+      <group caption='State Set' name='[State Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='COUNT([# of Dialysis Stations])' function='order' user:ui-marker='order'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[State]' />
+              <groupfilter function='member' level='[State]' member='%null%' />
+            </groupfilter>
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728875525:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728887815:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Dialysis_1.csv' id='Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435'>
+            <properties context=''>
+              <relation connection='textscan.1muvavi0hmamrg1h61q881l9p821' name='Dialysis_1.csv' table='[Dialysis_1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Provider_Number' ordinal='0' />
+                  <column datatype='string' name='Facility_Name' ordinal='1' />
+                  <column datatype='integer' name='Five Star' ordinal='2' />
+                  <column datatype='string' name='City' ordinal='3' />
+                  <column datatype='string' name='State' ordinal='4' />
+                  <column datatype='string' name='County' ordinal='5' />
+                  <column datatype='string' name='Profit_Non-Profit' ordinal='6' />
+                  <column datatype='string' name='Chain Owned' ordinal='7' />
+                  <column datatype='string' name='Chain_Organization' ordinal='8' />
+                  <column datatype='integer' name='# of Dialysis Stations' ordinal='9' />
+                  <column datatype='string' name='Patient_Transfusion category text' ordinal='10' />
+                  <column datatype='integer' name='Num_Patients_Transfusion_Summary' ordinal='11' />
+                  <column datatype='integer' name='Num_Patients_Hypercalcemia_Summary' ordinal='12' />
+                  <column datatype='integer' name='Num_Patients_SerumPhosphorus_Summary' ordinal='13' />
+                  <column datatype='string' name='Patient_hospitalization_category_text' ordinal='14' />
+                  <column datatype='string' name='Patient_Hospital_Readmission_Category' ordinal='15' />
+                  <column datatype='string' name='Patient_Survival_Category_Text' ordinal='16' />
+                  <column datatype='integer' name='Num_Patient_Hospitalizations_Summary' ordinal='17' />
+                  <column datatype='integer' name='Num_Patients_Hospitalizations_Readmit_Summary' ordinal='18' />
+                  <column datatype='integer' name='Num_Patients_Survival_Summary' ordinal='19' />
+                  <column datatype='real' name='Mortality_Rate (Facility)' ordinal='20' />
+                  <column datatype='real' name='Readmission_Rate (Facility)' ordinal='21' />
+                  <column datatype='real' name='Hospitalization_Rate (Facility)' ordinal='22' />
+                  <column datatype='string' name='Patient_Infection_category_text' ordinal='23' />
+                  <column datatype='real' name='Standard_Infection_Ratio' ordinal='24' />
+                  <column datatype='real' name='Transfusion_Rate (Facility)' ordinal='25' />
+                  <column datatype='string' name='Fistula_Category_Text' ordinal='26' />
+                  <column datatype='integer' name='Num_Patients_Fistula_Summary' ordinal='27' />
+                  <column datatype='integer' name='Num_Patients_Catheter_Summary' ordinal='28' />
+                  <column datatype='integer' name='Num_Patients_nPCR_Summary' ordinal='29' />
+                  <column datatype='string' name='SWR_category_text' ordinal='30' />
+                  <column datatype='integer' name='Num_Patients_SWR' ordinal='31' />
+                  <column datatype='string' name='PPPW_category_text' ordinal='32' />
+                  <column datatype='integer' name='Num_Patients_PPPW' ordinal='33' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Dialysis_2.csv' id='Dialysis_2.csv_951C4D8DFF4F4B19938F8BC7A5F48BD1'>
+            <properties context=''>
+              <relation connection='textscan.1muvavi0hmamrg1h61q881l9p821' name='Dialysis_2.csv' table='[Dialysis_2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='CCN_Number' ordinal='0' />
+                  <column datatype='string' name='Total_ Performance _Score' ordinal='1' />
+                  <column datatype='real' name='Payment_Reduction_Percentage' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Provider_Number]' />
+              <expression op='[CCN_Number]' />
+            </expression>
+            <first-end-point object-id='Dialysis_1.csv_FA788E53E5E04719B57EF3B8FAE0B435' />
+            <second-end-point object-id='Dialysis_2.csv_951C4D8DFF4F4B19938F8BC7A5F48BD1' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+      <datasources>
+        <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+        <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+        <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+        <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Chain_Organization:nk]' />
+          <groupfilter function='member' level='[none:Chain_Organization:nk]' member='&quot;AQUA DIALYSIS&quot;' />
+        </groupfilter>
+        <target field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]'>
+        <groupfilter function='level-members' level='[none:Total_ Performance _Score:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Cards'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+            <column datatype='integer' name='[# of Dialysis Stations]' role='measure' type='quantitative' />
+            <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+            <column caption='Standard Infection Ratio' datatype='real' name='[Standard_Infection_Ratio]' role='measure' type='quantitative' />
+            <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+            <column caption='Transfusion Rate (Facility)' datatype='real' name='[Transfusion_Rate (Facility)]' role='measure' type='quantitative' />
+            <column-instance column='[Transfusion_Rate (Facility)]' derivation='Avg' name='[avg:Transfusion_Rate (Facility):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[# of Dialysis Stations]' derivation='Count' name='[cnt:# of Dialysis Stations:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Standard_Infection_Ratio]' derivation='Sum' name='[sum:Standard_Infection_Ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:\# of Dialysis Stations:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Standard_Infection_Ratio:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Transfusion_Rate (Facility):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:\# of Dialysis Stations:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Standard_Infection_Ratio:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Transfusion_Rate (Facility):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]' value='32' />
+            <format attr='background-color' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20' italic='true'>&lt;</run>
+                <run fontsize='20' italic='true'>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[Multiple Values]</run>
+                <run fontsize='20' italic='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.1974033117294312' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{40E451FE-6418-4BB5-BA03-209DAE50CB4A}' />
+    </worksheet>
+    <worksheet name='KPI-1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Number of Patients across various summaries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+            <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+            <column caption='Num Patient Hospitalizations Summary' datatype='integer' name='[Num_Patient_Hospitalizations_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Catheter Summary' datatype='integer' name='[Num_Patients_Catheter_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Fistula Summary' datatype='integer' name='[Num_Patients_Fistula_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Hospitalizations Readmit Summary' datatype='integer' name='[Num_Patients_Hospitalizations_Readmit_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Hypercalcemia Summary' datatype='integer' name='[Num_Patients_Hypercalcemia_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients PPPW' datatype='integer' name='[Num_Patients_PPPW]' role='measure' type='quantitative' />
+            <column caption='Num Patients SerumPhosphorus Summary' datatype='integer' name='[Num_Patients_SerumPhosphorus_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Survival Summary' datatype='integer' name='[Num_Patients_Survival_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Transfusion Summary' datatype='integer' name='[Num_Patients_Transfusion_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients nPCR Summary' datatype='integer' name='[Num_Patients_nPCR_Summary]' role='measure' type='quantitative' />
+            <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+            <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Num_Patient_Hospitalizations_Summary]' derivation='Sum' name='[sum:Num_Patient_Hospitalizations_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_Catheter_Summary]' derivation='Sum' name='[sum:Num_Patients_Catheter_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_Fistula_Summary]' derivation='Sum' name='[sum:Num_Patients_Fistula_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_Hospitalizations_Readmit_Summary]' derivation='Sum' name='[sum:Num_Patients_Hospitalizations_Readmit_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_Hypercalcemia_Summary]' derivation='Sum' name='[sum:Num_Patients_Hypercalcemia_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_PPPW]' derivation='Sum' name='[sum:Num_Patients_PPPW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_SerumPhosphorus_Summary]' derivation='Sum' name='[sum:Num_Patients_SerumPhosphorus_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_Survival_Summary]' derivation='Sum' name='[sum:Num_Patients_Survival_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_Transfusion_Summary]' derivation='Sum' name='[sum:Num_Patients_Transfusion_Summary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num_Patients_nPCR_Summary]' derivation='Sum' name='[sum:Num_Patients_nPCR_Summary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patient_Hospitalizations_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Catheter_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Fistula_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Hospitalizations_Readmit_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Hypercalcemia_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_nPCR_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_PPPW:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_SerumPhosphorus_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Survival_Summary:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Transfusion_Summary:qk]' scope='rows' value='false' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='8' />
+            <format attr='text-format' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Catheter_Summary:qk]' value='n#,##0,K;-#,##0,K' />
+            <format attr='font-size' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patient_Hospitalizations_Summary:qk]' value='8' />
+            <format attr='color' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patient_Hospitalizations_Summary:qk]' value='#ffffff' />
+            <format attr='text-format' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patient_Hospitalizations_Summary:qk]' value='n#,##0,K;-#,##0,K' />
+            <format attr='text-format' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Fistula_Summary:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#aaaa7f' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#55007f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f1ce63' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patient_Hospitalizations_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-color' value='#ff9da7' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Catheter_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Fistula_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#e799b3' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Hospitalizations_Readmit_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Hypercalcemia_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#a0cbe8' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_nPCR_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#8b0000' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_PPPW:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_SerumPhosphorus_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='bottom' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#aa5500' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Survival_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#b6992d' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Transfusion_Summary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patient_Hospitalizations_Summary:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Catheter_Summary:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Fistula_Summary:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Hospitalizations_Readmit_Summary:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Hypercalcemia_Summary:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_nPCR_Summary:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_PPPW:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_SerumPhosphorus_Summary:qk] + ([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Survival_Summary:qk] + [federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_Transfusion_Summary:qk])))))))))</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_SerumPhosphorus_Summary:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Num_Patients_SerumPhosphorus_Summary:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>663878</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-1' y='-9' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{79ED2704-308B-4BE1-8019-2801F9B7CCFF}' />
+    </worksheet>
+    <worksheet name='KPI-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Profit vs Non-Profit Stats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+            <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+            <column caption='Facility Name' datatype='string' name='[Facility_Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Five Star]' role='measure' type='quantitative' />
+            <column caption='Profit Non-Profit' datatype='string' name='[Profit_Non-Profit]' role='dimension' type='nominal' />
+            <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+            <column-instance column='[Five Star]' derivation='Avg' name='[avg:Five Star:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Facility_Name]' derivation='Count' name='[cnt:Facility_Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit_Non-Profit]' derivation='None' name='[none:Profit_Non-Profit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Five Star:qk]' included-values='in-range'>
+            <min>3.6212938005390836</min>
+            <max>3.7707572630576283</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Facility_Name:qk]' included-values='all' />
+          <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Profit_Non-Profit:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Profit_Non-Profit:nk]' />
+              <groupfilter function='member' level='[none:Profit_Non-Profit:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Profit_Non-Profit:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Facility_Name:qk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Five Star:qk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Facility_Name:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='1' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='solid' />
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='3' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='1' />
+            <format attr='div-level' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#aaaa7f' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' value='#898989' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='10' />
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#00aa7f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Facility_Name:qk]</rows>
+        <cols>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Profit_Non-Profit:nk]</cols>
+      </table>
+      <simple-id uuid='{9A7CD1AB-FD58-49E1-AA44-37D6B445EE43}' />
+    </worksheet>
+    <worksheet name='KPI-3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Chain Organizations w.r.t. Total Performance Score as No Score</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+            <column caption='0' datatype='integer' name='[Calculation_1627769803728875525]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='0' datatype='integer' name='[Calculation_1627769803728887815]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+            <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+            <column-instance column='[Chain_Organization]' derivation='Count' name='[cnt:Chain_Organization:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total_ Performance _Score]' derivation='Count' name='[cnt:Total_ Performance _Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1627769803728875525]' derivation='Sum' name='[sum:Calculation_1627769803728875525:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1627769803728887815]' derivation='Sum' name='[sum:Calculation_1627769803728887815:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728887815:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728875525:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728887815:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#aaaa7f' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#898989' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.0434806346893311' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728875525:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]' />
+              <text column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Total_ Performance _Score:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='1'>TPS(No Score)</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1'>(</run>
+                <run fontalignment='1'><![CDATA[<[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Total_ Performance _Score:qk]>]]></run>
+                <run fontalignment='1'>)</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='on' />
+                <format attr='vertical-align' value='bottom' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='6.9928369522094727' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728887815:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]' />
+              <text column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Chain_Organization:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'>Chain Organization</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='10'><![CDATA[(<[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Chain_Organization:qk]>)]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='5.0694117546081543' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728875525:qk] + [federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:Calculation_1627769803728887815:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{345E090D-A039-4B3F-A914-4071942F1E95}' />
+    </worksheet>
+    <worksheet name='KPI-4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Dialysis Stations Stats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+            <column datatype='integer' name='[# of Dialysis Stations]' role='measure' type='quantitative' />
+            <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+            <column-instance column='[# of Dialysis Stations]' derivation='Count' name='[cnt:# of Dialysis Stations:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State Set]' derivation='InOut' name='[io:State Set:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+            <column-instance column='[# of Dialysis Stations]' derivation='Sum' name='[sum:# of Dialysis Stations:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[State Set]'>
+            <groupfilter function='level-members' level='[State]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[io:State Set:nk]'>
+            <groupfilter function='level-members' level='[io:State Set:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[io:State Set:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[State Set]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:# of Dialysis Stations:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:State:nk]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#aaaa7f' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='10' />
+            <format attr='background-color' value='#898989' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='10' />
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[sum:# of Dialysis Stations:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#55007f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:# of Dialysis Stations:qk]</rows>
+        <cols>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{241454C4-DA03-4E70-8BDC-545359F9D214}' />
+    </worksheet>
+    <worksheet name='KPI-5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'># of Category Text-As Expected</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+            <column caption='Category Text As Expected' datatype='integer' datatype-customized='true' name='[Calculation_1627769803737321487]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [Fistula_Category_Text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_hospitalization_category_text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_Infection_category_text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_Survival_Category_Text] = &quot;As Expected&quot; AND&#13;&#10;    [Patient_Transfusion category text] = &quot;As Expected&quot; AND&#13;&#10;    [PPPW_category_text] = &quot;As Expected&quot;&#13;&#10;     &#13;&#10;THEN&#13;&#10;    1&#13;&#10;ELSE&#13;&#10;    0&#13;&#10;END' />
+            </column>
+            <column caption='Summary calculation vs category text as expected' datatype='real' name='[Calculation_1627769803738546192]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Fistula_Category_Text] = &quot;As Expected&quot; THEN [Num_Patients_Fistula_Summary]&#13;&#10;ELSEIF [Patient_hospitalization_category_text] = &quot;As Expected&quot; THEN [Num_Patient_Hospitalizations_Summary]&#13;&#10;ELSEIF [Patient_Infection_category_text] = &quot;As Expected&quot; THEN [Standard_Infection_Ratio]&#13;&#10;ELSEIF [Patient_Survival_Category_Text] = &quot;As Expected&quot; THEN [Num_Patients_Survival_Summary]&#13;&#10;ELSEIF [Patient_Transfusion category text] = &quot;As Expected&quot; THEN [Num_Patients_Transfusion_Summary]&#13;&#10;ELSEIF [PPPW_category_text] = &quot;As Expected&quot; THEN [Num_Patients_PPPW]&#13;&#10;ELSEIF [SWR_category_text] = &quot;As Expected&quot; THEN [Num_Patients_SWR]&#13;&#10;ELSE NULL&#13;&#10;END' />
+            </column>
+            <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+            <column caption='Fistula Category Text' datatype='string' name='[Fistula_Category_Text]' role='dimension' type='nominal' />
+            <column caption='Num Patient Hospitalizations Summary' datatype='integer' name='[Num_Patient_Hospitalizations_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Fistula Summary' datatype='integer' name='[Num_Patients_Fistula_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients PPPW' datatype='integer' name='[Num_Patients_PPPW]' role='measure' type='quantitative' />
+            <column caption='Num Patients SWR' datatype='integer' name='[Num_Patients_SWR]' role='measure' type='quantitative' />
+            <column caption='Num Patients Survival Summary' datatype='integer' name='[Num_Patients_Survival_Summary]' role='measure' type='quantitative' />
+            <column caption='Num Patients Transfusion Summary' datatype='integer' name='[Num_Patients_Transfusion_Summary]' role='measure' type='quantitative' />
+            <column caption='PPPW category text' datatype='string' name='[PPPW_category_text]' role='dimension' type='nominal' />
+            <column caption='Patient Infection category text' datatype='string' name='[Patient_Infection_category_text]' role='dimension' type='nominal' />
+            <column caption='Patient Survival Category Text' datatype='string' name='[Patient_Survival_Category_Text]' role='dimension' type='nominal' />
+            <column caption='Patient Transfusion category text' datatype='string' name='[Patient_Transfusion category text]' role='dimension' type='nominal' />
+            <column caption='Patient hospitalization category text' datatype='string' name='[Patient_hospitalization_category_text]' role='dimension' type='nominal' />
+            <column caption='SWR category text' datatype='string' name='[SWR_category_text]' role='dimension' type='nominal' />
+            <column caption='Standard Infection Ratio' datatype='real' name='[Standard_Infection_Ratio]' role='measure' type='quantitative' />
+            <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1627769803737321487]' derivation='Count' name='[cnt:Calculation_1627769803737321487:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1627769803738546192]' derivation='CountD' name='[ctd:Calculation_1627769803738546192:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1627769803737321487]' derivation='None' name='[none:Calculation_1627769803737321487:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Calculation_1627769803737321487:ok]'>
+            <groupfilter function='member' level='[none:Calculation_1627769803737321487:ok]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Calculation_1627769803737321487:ok]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#aaaa7f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Calculation_1627769803737321487:qk]' />
+              <text column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[ctd:Calculation_1627769803738546192:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'>As Expected Category Text</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Calculation_1627769803737321487:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'>Summary of Patients</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1vbt7uk199yu8w12e5wca05f9v9n].[ctd:Calculation_1627769803738546192:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='10' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5492265224456787' />
+                <format attr='shape' value='diamond' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#d5f05a' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{37475F90-EA43-4EBD-BD2A-0B7D6751F1F4}' />
+    </worksheet>
+    <worksheet name='KPI-6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Average Payment Reduction Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+            <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Payment Reduction Percentage' datatype='real' name='[Payment_Reduction_Percentage]' role='dimension' type='ordinal' />
+            <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+            <column-instance column='[Payment_Reduction_Percentage]' derivation='Avg' name='[avg:Payment_Reduction_Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment_Reduction_Percentage]' derivation='None' name='[none:Payment_Reduction_Percentage:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Payment_Reduction_Percentage:ok]'>
+            <groupfilter from='0.0050000000000000001' function='range' level='[none:Payment_Reduction_Percentage:ok]' to='0.02' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Payment_Reduction_Percentage:ok]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</column>
+            <column>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Payment_Reduction_Percentage:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Payment_Reduction_Percentage:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#aaaa7f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Payment_Reduction_Percentage:qk]</cols>
+      </table>
+      <simple-id uuid='{1A34EC7C-A752-492A-87F6-95C265F7D77E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='24' italic='true'>HealthCare Analytics Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#666666' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#55007f' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Dialysis_1+' name='federated.1vbt7uk199yu8w12e5wca05f9v9n' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1vbt7uk199yu8w12e5wca05f9v9n'>
+        <column caption='Chain Organization' datatype='string' name='[Chain_Organization]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Five Star]' role='measure' type='quantitative' />
+        <column caption='Total  Performance  Score' datatype='string' name='[Total_ Performance _Score]' role='dimension' type='nominal' />
+        <column-instance column='[Five Star]' derivation='Avg' name='[avg:Five Star:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Chain_Organization]' derivation='None' name='[none:Chain_Organization:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Total_ Performance _Score]' derivation='None' name='[none:Total_ Performance _Score:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98120' id='25' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone h='7403' id='26' type-v2='title' w='99034' x='483' y='940'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90717' id='23' param='vert' type-v2='layout-flow' w='99034' x='483' y='8343'>
+              <zone h='90717' id='21' type-v2='layout-basic' w='99034' x='483' y='8343'>
+                <zone h='78734' id='19' param='horz' type-v2='layout-flow' w='99034' x='483' y='20326' />
+                <zone h='11983' id='20' name='Cards' show-title='false' w='99034' x='483' y='8343'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='34430' id='5' name='KPI-1' w='33294' x='296' y='21034' />
+        <zone h='33725' id='6' name='KPI-2' w='33294' x='33945' y='21269' />
+        <zone h='31962' id='8' name='KPI-4' w='32938' x='533' y='56404' />
+        <zone h='33608' id='14' name='KPI-3' w='32109' x='67654' y='21034' />
+        <zone h='32197' id='15' name='KPI-5' w='33294' x='33945' y='56287' />
+        <zone h='32550' id='16' name='KPI-6' w='32346' x='67595' y='56052' />
+        <zone h='11046' id='27' mode='checkdropdown' name='KPI-3' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]' type-v2='filter' values='database' w='24289' x='355' y='88837' />
+        <zone h='10458' id='28' name='KPI-2' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Five Star:qk]' type-v2='filter' values='database' w='24822' x='50178' y='89307' />
+        <zone h='10458' id='29' mode='checkdropdown' name='KPI-3' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]' type-v2='filter' values='database' w='24408' x='75296' y='89189' />
+        <zone h='11046' id='30' mode='checkdropdown' name='KPI-4' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[State Set]' type-v2='filter' values='database' w='24704' x='25059' y='88837' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='24' italic='true'>HealthCare Analytics Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='35' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone h='7403' id='26' type-v2='title' w='99034' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='88' h='11983' id='20' is-fixed='true' name='Cards' show-title='false' w='99034' x='483' y='8343'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='34430' id='5' is-fixed='true' name='KPI-1' w='33294' x='296' y='21034'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11046' id='27' mode='checkdropdown' name='KPI-3' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]' type-v2='filter' values='database' w='24289' x='355' y='88837'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10458' id='29' mode='checkdropdown' name='KPI-3' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]' type-v2='filter' values='database' w='24408' x='75296' y='89189'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='269' h='33608' id='14' is-fixed='true' name='KPI-3' w='32109' x='67654' y='21034'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10458' id='28' name='KPI-2' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Five Star:qk]' type-v2='filter' values='database' w='24822' x='50178' y='89307'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='33725' id='6' is-fixed='true' name='KPI-2' w='33294' x='33945' y='21269'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='261' h='32550' id='16' is-fixed='true' name='KPI-6' w='32346' x='67595' y='56052'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='258' h='32197' id='15' is-fixed='true' name='KPI-5' w='33294' x='33945' y='56287'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11046' id='30' mode='checkdropdown' name='KPI-4' param='[federated.1vbt7uk199yu8w12e5wca05f9v9n].[State Set]' type-v2='filter' values='database' w='24704' x='25059' y='88837'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='31962' id='8' is-fixed='true' name='KPI-4' w='32938' x='533' y='56404'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E08F9EED-9617-45E7-BA3E-005030563411}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='KPI-1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CF6CCB91-1A2E-4770-AAA2-137968A72304}' />
+    </window>
+    <window class='worksheet' name='KPI-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Facility_Name:nk]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Profit_Non-Profit:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{24907A65-6B52-4316-B484-1263C7B790C7}' />
+    </window>
+    <window class='worksheet' name='KPI-3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Chain_Organization:nk]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Total_ Performance _Score:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9D7552DF-E273-446E-9D8D-80340A7FC4CC}' />
+    </window>
+    <window class='worksheet' name='KPI-4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[State Set]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[io:State Set:nk]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B62BF323-704B-49B0-8FE0-491544011BDC}' />
+    </window>
+    <window class='worksheet' name='KPI-5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:Calculation_1627769803737321487:ok]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[ctd:Calculation_1627769803738546192:ok]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Calculation_1627769803737321487:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E4867601-34E5-4EC4-9A73-A3298E9F2D0A}' />
+    </window>
+    <window class='worksheet' name='KPI-6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Payment_Reduction_Percentage:qk]</field>
+                  </x-fields>
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[avg:Payment_Reduction_Percentage:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.0080928887376659365</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Payment_Reduction_Percentage:ok]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Payment_Reduction_Percentage:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D9898943-0E92-4544-80D9-EB24BC0887F6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Cards'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI-6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='30' />
+      <simple-id uuid='{97AFEAC6-FC26-4AD1-BEAB-87B9F7239E2A}' />
+    </window>
+    <window class='worksheet' name='Cards'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;[federated.1vbt7uk199yu8w12e5wca05f9v9n].[cnt:\# of Dialysis Stations:qk]&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[:Measure Names]</field>
+            <field>[federated.1vbt7uk199yu8w12e5wca05f9v9n].[none:Facility_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E14DAC51-2A81-41A4-A451-868C7308FBDF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cards' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='KPI-1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='KPI-2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAE+klEQVR4nO3cT2ibdRzH8U/+VWJl2b+uXVHaaZW207m1uGrtRPAwsd5Fr54EL148efQs
+      KF5EirCLB/EiKMKQMTdw2qUKjdZuSjsLJjY07Zqkf5I8z+OtF/Fk02fm835dE37PN4f38+OX
+      wy8RRVEkwFQy7gGAOO0FEARBnHMAsWAHgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUCgDUC
+      gDUCiFEURarX66pWq4qiSLVaTfV6Xa1WS+vr6wrDMO4RO1467gGc1Wo1zczMKJVKaWpqSvl8
+      XpOTk5qdnVVvb6+CIND09HTcY3Y0doAYZTIZbW1taXNzU/Pz8+rq6lI+n1cul1MQBCoUCnGP
+      2PEIIEbValWHDx9WT0+P+vv7lc1mVSqVNDExoVwup5GRkbhH7HiJKIoiSQqCQKlUKu55rERR
+      pHK5rCAI1NfXp2KxqGw2q1QqpUqlooGBASUSibjH7GgEAGsHdgieWZrTm3NfHdTj0ME+n3xF
+      L518dF/WOrAAWmGonbB1UI9DBwuj/ft7mEMwrBEArBEArBEArBEArBEArBEArBEArBEArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArO3dCtFsNpVMtq+Hla1N/bK52rb14WPsyEn1
+      3Ne9L2vtBRCGYVsDAO5FewHg3hZFoRqNlpLJhNKZjLgua3/wym+zevm23nn3QzXWV/TFNz/8
+      +xd37uq99z/Qp5cuabXW+MfHs5c/09c3FnT92+sqLi+ouLHdxql9cDt0mwWNujK7G7q5uKJS
+      aU2ffPyRFAY6fWZYNwtl1WoVvf3WG1LYVPqBYxo6GurK5S81992Pmnz6ca3tpBUFTW3f+V79
+      zw5rYXFRd1fmVOo6rddfe1GZuH/g/xw7wAE4de6Cln+6plZjSzvJQ3rqsRNaKm7okdGzyqZD
+      3SrkdetOUSu//6qdYyN6ZuiInnv5VR1PVXX2wkW1amvqHxjU2NiTarVaOjX4sM6dH+fttQ84
+      A7TZbnVVt4u7ur9RVDk6ru7mqv7caOr8E4Na3+1W5a9ljY+PSc1t5ReWNH5mVNXyH1prHtKD
+      R9O6cvWaegeHlW1VdGJoXL8V5jQ69JCu3vhZL1x8nh3gP/ob6YoquLma8EYAAAAASUVORK5C
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='KPI-3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='KPI-4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAARcElEQVR4nO3deXCc5X3A8e+7l/aQVrtaHStZa1m2dVm2BDgGgzBgmASw3UxbAw1tmkw6
+      TSaUppODhISGadKGI0AS0k6aNEnTZjpNGjrtMDjmcAy+sHFMQBayjrVOW/da12q1Wu1qd9/+
+      IeJpWp+ydt9dvb/PX54x0vto0Nfv+7zvPu+jqKqqIoROGbQegBBaMv32D729vYyPj2s5FiHS
+      7nwAsViMSCSi5ViESDu5BBK6JgEIXZMAhK5JAELXJAChaxKA0DXTxf5CVVXOnDlDOBymqqqK
+      o0ePUlJSQl1dHQDvvPMOFosFn89He3s7FRUVhMNhgsEglZWVFBUVpe2HEGKpLnkGMBqN9PT0
+      MDExwfj4OD6fD0VRGB0dZW5ujuHhYV577TU2btzIkSNHaGlpwePxUFBQkK7xC3FNLhqAoigU
+      FhYCUFhYyPbt23nxxRdZWFggFothsVgwGo00NTXR1dVFOBzm3nvvRVVV9u3bl7YfQIhrcdEA
+      VFWlra2N+fl5hoaG6O7uxufz8fbbb+NwOJidnSUnJwe73U4sFqOpqYmzZ88yPDxMdXV1On8G
+      IZZM+e2nQTs7OxkbG7vsFwSDQfLz81M+MCHS4arvAl3ul19VVU6+MMDQyaklD0qIdFn226Bq
+      Eoaapzj14hCy1EBkumUPwGBU2PHEJhSTQtf+y19SCaGllDwIUwwKt/1VNa0vDjHZH07FIYRY
+      Fil7Emx1mml6uIpD3/GzMJ9I1WGEuCYp/SiEd4OTtduKeOuHPahJmQ+IzJPyzwI17C5nbjJG
+      96FzqT6UEFct5QEoisIdn6+h5T8HmB6cS/XhhLgqafk0qNVppumhdRx+/jTxWDIdhxTiiqTt
+      49Clm1yU3+DmxE/65PmAyBhpXQ9w3R+tZupsmP63JtJ5WCEuKq0BGIwKd36plrd/2s/MiLyC
+      RWgv7SvCbC4LN39qLYe+I/MBoT1NlkT6NhdQuimft3/ap8XhhThPszXB1z+4msm+MGeOy3xA
+      aEezAIwmA9sfqeHXP+kjFJjXahhC5zR9K4S9IIdbPr2OA8/6SSzIfECkn+avRSm/wY233slv
+      /q1f66EIHdI8AIDNf1LBua5Zzp6Q+YBIr4wIwGg2cMfnqzn+z33MTUa1Ho7QkYwIACC3yMpN
+      n6jkwHN+knGZD4j0yJgAACq2enBXOGj+xYDWQxE6kVEBANz4iTUMNU8x2CxvlRCpl3EBmCxG
+      7vhCDW/9Uw/zMwtaD0escBkXAICz1MaWj63hjWc6ZSmlSKmMDACg4mYPzlIbJ1+Q+YBInYwN
+      QFEUtv55JWd+PcHwe9NaD0esUBkbAIApZ3E+cOz7PcxNxbQejliBMjoAAFe5nes/4uPwd0+T
+      TMh8QCyvjA8AYO22IhyeHHnfqFh2WRGAYlDY+sm19BwOEPCHtB6OWEGyIgAAs9XIHY/Ucvj5
+      08yH5PmAWB5ZEwCA22enYXc5h58/Lc8HxLLIqgAAqu8qwWw30b53ROYD4pplXQCKQaHpoXV0
+      vDrCRK+8el1cm6wLAMBiN3HnF2s5+Jyf6KzMB8TSZWUAAAVrHGzYVcrRf5RXr4uly9oAAOru
+      LUVNqnS+Nqr1UESWyuoAFIPCts9U0bZnmIm+Wa2HI7JQVgcAYHGY2P5IDQee9RObi2s9HJFl
+      sj4AgIJKBxt2lvLm97plPiCuyooIQFEU6u4tJRFNcvp12ZpVXLkVEQC8vzXrZ6tp/e9B2ZpV
+      XLEVEwBATq6J2z5Xw4Hn/CxEZGtWcXkrKgCA4uo81m8vlq1ZxRVZcQEANO4uJzK9QM9h2ZpV
+      XNqKDADg9s9Wc/IXA0wPyNas4uJWbADWfDNND6/n4Lf9xKMyHxAXtmIDACjdmM+amws5/qNe
+      +ei0uKAVHQBAw33lzIzO0/fmuNZDERloxQdgMChsf6SGd392huCQzAfE71rxAcD7W7N+ev3i
+      1qwyHxD/iy4CAFjV6KJ8cwHHf9wrzwfEeboJAKDx/nIG3p7i9ac7ZFIsAJ0FYDQZaHp4PYmF
+      JEf+vouFebkc0jtdBQCweksBH3y8nvwyG3sfe0/2KNY5k9YDuFZzc3O0trbidrupqqpiYWGB
+      5uZm8vLycLlcDA4O4vV6SSQSjI2NsWHDBpxOJ433+/Csy+WVx09x86fW4ttcoPWPIjSQ9WeA
+      /v5+EokELS0tAIyMjBAOh2lra8PlcuFyuWhra6O5uRmLxYLf7z//teU3uNn55Cbe/fezNP/H
+      WdmcT4eyPoBoNIrJtHgiU1WVSCSC2WwGwGBY/PHi8TjJZBJFUYjHf3fZpMOTw44nNzE3GeNX
+      T3QQC8uySj3J+gCKi4uZnZ2lqKiIo0ePYrfbiUajFBQUMDAwwNTUFF6vl5KSEoLBIF6v9/99
+      D7PVyC0PrWPNVg8vPdIiC+x1RFHfvx/Y2dnJ2Fh2LyecnJzE7XajKMqSvl5VVSZ6wxz8lp/G
+      +8qpurNkmUcoMs2KCmC5RKZjHP7uaXKLrGz95FqM5qw/UYqLkP+zF2BzWfjgV+vJyTOx97FW
+      whNRrYckUkQCuAiDUeEDf7qG6x7w8fJjrYycCmo9JJECWf8cINVWbykgv8zGgWc7qdxWyKbf
+      L8dgXNocQ2QeOQNcgfxVNnY+1cBU/xwHv+VnISK3SlcKCeAKmW1Gbv9cNcW1ebz0xRamB2Vt
+      wUogAVwFxaBQ/3tl3PqXVfzqiXb6jo7Lp0qznARwlRRFoaTWyc4nG2jfO8yJf+0nIR+hyFoS
+      wBLZ3Rbu+fpGkgtJXvubNiLTspN9NpIAroHRbODmT62jbmcpex9r5VyX7GGcbeQ26DKovKUQ
+      V7mNA8/4qbnby4adpSgGuVWaDeQMsEzcqx3s+mYDI63THPkHWW2WLSSAZWRxmLjzy3W4fHZ+
+      +aisNssGEsAyMxgUNv3BKm76s0peefwUZ349ofWQxCVIACmgKApljS52fGMT7/3XIO/87Iys
+      NstQEkAK5RblcO/fbiQyFWPf37XLpt4ZSAJIMZPVyK0PV7H2tiJ++eh7jPfIarNMIrdB06T6
+      rhIKKuwcfM5Pw+5yqu4qXvLKNbF85AyQRoXr89j1TAO9b57j2A965D2lGUACSDNrnpkPPV6P
+      Nd/My189JavNNCYBaMBgVNj8xxVc/4CP15/qoP/YOEl5Ya8mZFG8xhLxJG/9oIfZ8Si3f7Ya
+      m8ui9ZB0RQLIAKqq0nPoHCf+pY+Kmzxc94APm8uMwSQn6FSTADLIuz8/y0TPLPMzC8zPLJBX
+      YsW7wUlxnRPPWgc5uWath7jiSAAZSFVVknGVmZEIo20zjHeFGOsMYTQbcK+2U1LvpHBdLi6f
+      HbPVqPVws5oEkGLRaJRYLEZubi6KoqCqKuFwGIfDwfz8PKqqYrVaCYVCOByO8+85/b/UpEp0
+      Ns70wBxjHTOMtc8wMzqP1WmmoNJBSZ2Tkto8bG5Lyl7kpaoqJ0+epL6+HovFwtjYGCMjI2zc
+      uJHR0VFCoRC1tbUMDw9jt9txu90pGcdykgdhKRSNRtmzZw8NDQ1UVVUB0NHRwauvvsrHP/5x
+      jh49yqZNm+jr68PtdjMyMsKOHTsu+L0Ug4LVacZbn4+3Ph9YjCI8HmWiN8zIqSDte4aJzi7g
+      KLJSXJtHaX0+RTV5mHIMy/LQrb+/n0OHDlFZWYnJZOLw4cPceOONHDlyhKmpKcrKyuju7qa7
+      u5uysjIJQO8CgQCRSITTp09TUVEBQF9fHz6fj+7ubhRFoaOjA7fbzdDQEDab7aq+v2JQyC22
+      kltspWKrB1j8V3p6MMJYW5CuN8Y4/uNeAFzlNko3uSiuzSN/lQ1TztVdOiUSCfbv34/L5WJy
+      cpL8/Hzq6uro7+8nEAiQm5uLy+UiHA5TWVlJNJodzzckgBQqKCggLy+PeDzOyMgIyWQSj8eD
+      3++nvr6eYDDIxMQEiUSCmpoa2tvbr/mYiqLg9tlx++zU3lOKmlSJzSWY7Jsl4A/x7s/PEhyK
+      YLEbKa7Jo7jWSWFVLo6CHIyWi186GQwGHnzwQY4dO4bVauXEiRMUFRUxMDDAbbfdxsmTJ+nu
+      7mbr1q0cP36cRCJBfX39RS/pMoXMAVIsFAqxsLDA2NgYa9aswWazEQqFyM3NZXp6GqPRiMPh
+      IBAI4PF4sFhS/xwgmfjtpdNiFOe6QswGorh9djzrcvHWO/GszSUn13TBpZ2hUAhVVXE6nSkf
+      a6pJAAKAZDxJcCjCua5ZRtuCjHfPoiZV3BWLE+z8VTYMJoWyBpfWQ11WEoC4IFVVSUSTjPfO
+      MtYxQ9frAYJDEXZ/7wZc5Xath7dsJABxReLRBGOdIY59v5vrP7KadbcXrYiPc8uzdnFFTDlG
+      VjW62PXNRk7vH+P4D3tXxBvxJABxVWz5Zu75+kbMdiMvP9bK7LnsfvOFBCCumsGosPmjFTTe
+      7+OVx08x8JtJrYe0ZJl9k1ZkLEVRWL2lAPdqO28808l4zyyN9/swZNkb8eQMIK5JXomVnU81
+      ED4XZd/X2pgPZdebLyQAcc1MFgNND6+n6q5i9nyxhUDnjNZDumJyCSSWhaIorLu9GNdqO4ef
+      76L2Hi+1d3sz/iXBcgYQy8pTmcuOb2xkqHmKg9/2sxDJ7DdfSABi2eXkmbnrK3UUVeex50uZ
+      vZ+aBCBSQlEUNn54Fbc8tI79T7TT++a5jNxPTQIQKeXdkM+OJxrofHWU4z/qJR7LrKfHEoBI
+      OXvB4n5qphwDrzzeytxk5iyWkQBEWhiMCh/42Boad5ez9yutDDZPaT0kQG6DijRSFIXVN3pw
+      rXZw8LlOzvlDNN5Xrun7j+QMINLO6bWy48kGZgNRXn+6k+hsXLOxSABCEyaLgVs/s56KrQW8
+      9IWTmm0xK5dAQjOKolB1VwlF1Xm88c1ONuwqS/vTYzkDCE0pirK4xezTDQydfH+L2TQ+PZYA
+      REbIyTNz56O1uHx29jzaQnAoPU+PJQCRMQwGhYY/LOfWv1jPa19vo+/oeOqPmfIjCHGVimud
+      7Hq6kY6XRzj+o14SC6l7eiwBiIxkL7Bw99fqMVkNvPzXrSnbSkoCEBnLaDaw+aMVNOwu5+Wv
+      tjLSOr3sx5DboCKjKYpCxU0eXD47B57tpGKrh8b7fBiMy3OrVM4AIivkl9nY9VQD4fEo+59o
+      X7a1xxKAyBomq5FbH66iYquHvV9+j4ne2Wv6fqqqyiWQyD41H/JSuD6XA8/6qf9wGbX3eC/5
+      msZ4NEF4PEZobJ7gcISZoQjB4QhzkzF5N6jIXrG5OIe+cxqzzUjt3V5sLgszoxGmz84xMzrP
+      zHCE+ZkFEjEVe4EFZ6kV5yobrnI7+ats2FxmCUBkt2RC5eC3/PQcClB+gxtn2eIvuLPMirPU
+      htVpxuIwXvQMIQGIrBcLx4mG4uR5rVf9tTIHEFnP4jBhcSztV1kCEFlDVVXa2tqYnJykurqa
+      kpISuru7GR4eJi8v7/wWtNdddx2tra0kk0mampowGC6x91kaxy/ENVEUBa/XSzAYZHZ2dnE9
+      QVUVc3NzFBYWcubMGUpLS/H7/WzZsoXu7m4SiUt/tFoCEFlDVVU8Hg81NTUMDw8Di3sxT09P
+      4/V6z/83yWSSF154gZ07d2I2my/5PSUAkVVaWloIBAJUVFSwb98+AoEA27Ztw2w2s3btWgKB
+      AD6fD7fbzeDg4GXPAHIXSGSleDyOqqqX/Rf+cmQSLLLScm3ALZdAQtckAKFrEoDQNQlA6JoE
+      IHRNAhC6JgEIXZMAhK5JAELXJAChaxKA0DUJQOiaBCB0TQIQuiYBCF2TAISuSQBC1yQAoWsS
+      gNA1CUDomgQgdE0CELomAQhdkwCErkkAQtckAKFrEoDQNQlA6JoEIHRNAhC6JgEIXZMAhK5J
+      AELXJAChaxKA0DUJQOiaBCB0TQIQuiYBCF2TAISuSQBC1yQAoWsSgNA1CUDomqKqqgoQiURI
+      JpNaj+eCVFVFURSth3FBMralyZSxnQ8gmUxiMGTmCUHGtjQytsv7H/auVM9LiuhEAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='KPI-5' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='KPI-6' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADk0lEQVR4nO3XP2tddQDG8aftlbYZWqVBUwcFc1O0kQj+mQQDDp0E9y7i5KSzqy/AwRcg
+      br4GQSHQLTipdShoETWloPVCe40x3tzjlCI4uMi9kOfzmX7ncIZn+XLOOTUMwxAoNUqSjY2N
+      TCaTZW+BhRslyWQyyXg8zu7u7rL3wEKdPj6srKwscwcsxen/fgROLgFQTQBUEwDVBEA1AVBN
+      AFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQLXR8WF7ezubm5vL3AIL
+      9zCAN65dy+Mff7LMLbBwo39eDNPpsnbAUvgHoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgm
+      AKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCo
+      JgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoA
+      qCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqo2UP
+      gP/TZz//lBt372bt/Pm8t/l8kuTDb77OH0dHuXT2bF5bu5yPvr2Z97deyA/TqTcAJ8tX9+7l
+      gxdfyv5sltl8nmEYsjIaZTafZ2U0ypWLF/P65SeTJJPDPwXAyfLImTP5cTrN77NZkuSv+Tx7
+      +/t59+pmvrt/P8Mw5HCY5+DoKG8+9bQAOFneGm/kizt7ub4+zt7+fm4/eJDr6+v59Pb3eXvj
+      Sr789Zf8dnCQz+/s5XA+9w/AyXLp3Lm88+xz/7p/9dHHkiTPXLiQV59Ye3jfG4BqAqCaAKgm
+      AKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCo
+      JgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoA
+      qCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCa
+      AKgmAKoJgGoCoJoAqCYAqo2ODzdv3UpeeXmZW2DhTg3DMKyurmZrays7OzvL3gML5ROIagKg
+      mgCoJgCqCYBqAqCaAKgmAKoJgGoCoJoAqCYAqgmAagKgmgCoJgCqCYBqAqCaAKgmAKoJgGp/
+      A1mCdcWmkGcxAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
